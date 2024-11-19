@@ -3,7 +3,7 @@ const analyzeText = () => {
     const predicted_sentiment = document.getElementById('predicted_sentiment')
 
     console.log(review)
-    axios.post('http://127.0.0.1:8080/predict',
+    axios.post('https://movie-review-sentiment-analyzer-y20q.onrender.com/predict',
         { content: review },
         {
             headers: {
