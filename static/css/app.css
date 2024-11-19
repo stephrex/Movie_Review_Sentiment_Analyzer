@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.movie-review-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    transition: transform 0.3s;
+}
+
+.movie-review-container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff6f61;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.input-bubble {
+    margin: 1.2rem 1.2rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff9a9e;
+}
+
+.analyze-button {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.analyze-button:hover {
+    background: #ff7e72;
+    transform: translateY(-3px);
+}
+
+.analyze-button span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.result-container {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: #ff6f61;
+    font-weight: 600;
+}
+
+.result-container::before {
+    content: '💡 Result: ';
+    font-weight: bold;
+}

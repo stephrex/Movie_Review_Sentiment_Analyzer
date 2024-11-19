@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer on Movie Reviews</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="movie-review-container">
+        <h1>🎥 Sentiment Analyzer</h1>
+        <p>Analyze the sentiment of your movie review instantly.</p>
+        <div class="input-bubble">
+            <input type="text" id="movie_review" placeholder="Enter your movie review here...">
+        </div>
+        <button onclick="analyzeText()" class="analyze-button">
+            <span>🔍 Analyze Sentiment</span>
+        </button>
+        <div id="predicted_sentiment" class="result-container"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
